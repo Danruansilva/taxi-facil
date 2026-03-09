@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Cadastro - Taxi Fácil</title>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="login-card">
+
+<!-- Logo -->
+<div class="logo">
+<img src="img/taxi.png" alt="Taxi Fácil">
+</div>
+
+<!-- Título -->
+<h1 class="title">Criar Conta</h1>
+<p class="subtitle">Preencha seus dados</p>
+
+<form class="register-form" id="formCadastro">
+
+<div class="input-group">
+<i class="fas fa-user"></i>
+<input type="text" placeholder="Nome completo">
+</div>
+
+<div class="input-group">
+<i class="fas fa-calendar"></i>
+<input type="date">
+</div>
+
+<div class="input-group">
+<i class="fas fa-id-card"></i>
+<input type="text" placeholder="CPF">
+</div>
+
+<div class="input-group">
+<i class="fas fa-map-marker-alt"></i>
+<input type="text" placeholder="Endereço">
+</div>
+
+<div class="input-group">
+<i class="fas fa-mail-bulk"></i>
+<input type="text" placeholder="CEP">
+</div>
+
+<div class="input-group">
+<i class="fas fa-envelope"></i>
+<input type="email" placeholder="Email">
+</div>
+
+<div class="input-group">
+<i class="fas fa-phone"></i>
+<input type="tel" placeholder="Contato">
+</div>
+
+<div class="input-group">
+<i class="fas fa-lock"></i>
+<input type="password" placeholder="Senha">
+</div>
+
+<button type="submit" class="btn btn-primary btn-register">
+<i class="fas fa-user-plus"></i>
+Cadastrar
+</button>
+
+</form>
+
+</div>
+
+</div>
+
+<script>
+
+document.getElementById("formCadastro").addEventListener("submit", function(e){
+
+e.preventDefault(); // impede recarregar a página
+
+// redireciona para página do mapa/pedido
+window.location.href = "pedido.html";
+
+});
+
+</script>
+
+</body>
+</html>

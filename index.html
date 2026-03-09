@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Bem-vindo</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="login-card">
+            <!-- Logo/Ícone -->
+            <div class="logo">
+                <img src="img/taxi.png" alt="Taxi Fácil">
+            </div>
+
+            <!-- Título -->
+            <h1 class="title">Bem-vindo</h1>
+            <p class="subtitle">Faça login para continuar</p>
+
+            <!-- Formulário -->
+            <form class="login-form" id="loginForm">
+                <!-- Campo Usuário -->
+                <div class="input-group">
+                    <i class="fas fa-user"></i>
+                    <input type="text" id="username" placeholder="Usuário" required>
+                </div>
+
+                <!-- Campo Senha -->
+                <div class="input-group">
+                    <i class="fas fa-lock"></i>
+                    <input type="password" id="password" placeholder="Senha" required>
+                    <button type="button" class="toggle-password" id="togglePassword">
+                        <i class="fas fa-eye"></i>
+                    </button>
+                </div>
+
+                <!-- Link Esqueci a senha -->
+                <div class="forgot-password">
+                    <a href="#" class="link">Esqueceu a senha?</a>
+                </div>
+
+                <!-- Botão Cadastrar -->
+                <button type="button" class="btn btn-secondary" id="registerBtn">
+                    <i class="fas fa-user-plus"></i>
+                    Cadastrar
+                </button>
+
+                <!-- Botão Entrar -->
+                <button type="submit" class="btn btn-primary">
+                    <i class="fas fa-sign-in-alt"></i>
+                    Entrar
+                </button>
+            </form>
+
+            <!-- Separador -->
+            <div class="divider">
+                <span>ou continue com</span>
+            </div>
+
+            <!-- Botões de Login Social -->
+            <div class="social-login">
+                <button class="social-btn gmail" id="gmailBtn">
+                    <i class="fab fa-google"></i>
+                    <span>Gmail</span>
+                </button>
+                <button class="social-btn phone" id="phoneBtn">
+                    <i class="fas fa-phone"></i>
+                    <span>Número</span>
+                </button>
+                <button class="social-btn icloud" id="icloudBtn">
+                    <i class="fab fa-apple"></i>
+                    <span>iCloud</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

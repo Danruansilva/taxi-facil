@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Taxi Fácil</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="app">
+
+  <!-- HEADER -->
+  <div class="top-bar">
+    <div class="logo">
+      <img src="img/taxi.png" alt="Taxi Fácil">
+    </div>
+  </div>
+
+  <!-- CARD ROTA -->
+  <div class="ride-card">
+
+    <div class="input-group">
+      <span class="dot"></span>
+      <input type="text" placeholder="Sua localização">
+      <button class="add">+</button>
+    </div>
+
+    <div class="input-group">
+      <span class="arrow">➤</span>
+      <input type="text" placeholder="Digite seu destino">
+    </div>
+
+  </div>
+
+  <button class="request-ride">
+    🚕 Pedir Táxi
+  </button>
+
+  <!-- MAPA -->
+  <div id="map"></div>
+
+
+  <!-- BOTÃO LOCALIZAÇÃO -->
+  <button class="location-btn" onclick="irLocalizacao()">📍</button>
+
+</div>
+
+<!-- MENU INFERIOR -->
+<div class="bottom-menu">
+
+  <button class="menu-item">
+    🏠
+    <span>Início</span>
+  </button>
+
+  <button class="menu-item active">
+    🚕
+    <span>Pedir Corrida</span>
+  </button>
+
+  <button class="menu-item">
+    ⚙️
+    <span>Conta</span>
+  </button>
+
+</div>
+
+<!-- MODAL ESCOLHA DE CORRIDA -->
+
+<div id="rideModal" class="ride-modal">
+
+  <div class="ride-box">
+
+    <h3>Escolha o tipo de corrida</h3>
+
+    <button class="ride-option taxi" onclick="escolherCorrida('taxi')">
+      🚕 Táxi
+    </button>
+
+    <button class="ride-option moto" onclick="escolherCorrida('moto')">
+      🏍 Moto Táxi
+    </button>
+
+    <button class="ride-close" onclick="fecharModal()">Cancelar</button>
+
+  </div>
+
+</div>
+
+<!-- JS -->
+<script src="js/map.js"></script>
+
+
+<script async
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC3GC3YI5DdSN7OFvhNJfh3WAxC7uptq84&callback=iniciarMapa">
+</script>
+
+</body>
+</html>
