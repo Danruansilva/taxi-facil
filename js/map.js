@@ -134,3 +134,11 @@ document.querySelector(".request-ride").addEventListener("click", function(){
   }
   
   }
+
+  function abrirMenu(){
+    document.getElementById("menuCorrida").classList.toggle("ativo");
+    }
+
+    function abrirConta(){
+      window.location.href = "conta.html";
+      }
